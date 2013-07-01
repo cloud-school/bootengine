@@ -4,9 +4,7 @@
 
 case "$root" in
     GPTPRIO=*)
-        root="${root#gptprio:}"
-        root="$(echo $root | sed 's,/,\\x2f,g')"
-	root="gptprio:${root}"
+        root="gptprio:${root}"
         rootok=1 ;;
 esac
 
